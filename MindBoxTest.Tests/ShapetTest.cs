@@ -1,6 +1,6 @@
 namespace MindBoxTest.Tests
 {
-    using MindboxTest;
+    using MindBoxTest.Implementations;
     using NUnit.Framework;
     using System;
 

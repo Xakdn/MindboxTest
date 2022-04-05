@@ -1,16 +1,16 @@
-﻿namespace MindboxTest
+﻿namespace MindBoxTest.Implementations
 {
     /// <summary>
     /// Class for manipulation with circle shape.
     /// </summary>
-    /// <seealso cref="MindboxTest.Shape" />
+    /// <seealso cref="Shape" />
     public class Circle : Shape
     {
         public double Radius { get; set; }
 
         public Circle(double radius)
         {
-            this.Radius = radius;
+            Radius = radius;
             // Ideally, Validate() should be called from client code.
             // this.Validate();
         }
@@ -23,16 +23,16 @@
         /// </returns>
         public override double GetArea()
         {
-            return Math.PI * this.Radius * this.Radius;
+            return Math.PI * Radius * Radius;
         }
 
         /// <summary>
         /// Validates this input data for the circle.
         /// </summary>
-        /// <exception cref="System.ArgumentException">Radius should be more than 0</exception>
+        /// <exception cref="ArgumentException">Radius should be more than 0</exception>
         public override void Validate()
         {
-            if (this.Radius <= 0)
+            if (Radius <= 0)
             {
                 throw new ArgumentException("Radius should be more than 0");
             }

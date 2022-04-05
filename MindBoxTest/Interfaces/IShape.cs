@@ -1,4 +1,4 @@
-﻿namespace MindboxTest
+﻿namespace MindBoxTest.Interfaces
 {
 
     /// <summary>

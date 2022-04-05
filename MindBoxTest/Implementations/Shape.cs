@@ -1,9 +1,11 @@
-﻿namespace MindboxTest
+﻿using MindBoxTest.Interfaces;
+
+namespace MindBoxTest.Implementations
 {
     /// <summary>
     /// Abstract class for shapes.
     /// </summary>
-    /// <seealso cref="MindboxTest.IShape" />
+    /// <seealso cref="IShape" />
     public abstract class Shape : IShape
     {
         /// <summary>
